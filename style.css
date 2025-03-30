@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'primaryFont';
+    src: url('/assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500, 800;
+}
+
+@font-face {
+    font-family: 'secondaryFont';
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500, 800;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --background-color: #f4d04e;
+    --p-size: 16px;
+}
+
+body{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    padding: 20px 15px;
+    border: solid black 1px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px;
+    gap: 1rem;
+}
+
+.card-head{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.card-head img{
+    width: 325px;
+    border-radius: 1rem;
+
+}
+
+.card-head .tag{
+    background-color: #f4d04e;
+    padding: 5px 10px;
+    width: fit-content;
+    border-radius: 10%;
+    font-size: var(--p-size);
+    font-family: 'secondaryFont';
+    font-weight: 800;
+}
+
+.card-head .date{
+    font-family: 'secondaryFont';
+    font-family: var(--p-size);
+}
+.card-detail{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    gap: 1rem;
+}
+
+.card-detail .title{
+    font-family: 'secondaryFont';
+    font-weight: 800;
+}
+
+.description{
+    font-family: 'secondaryFont';
+    color: gray;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user img{
+    width: 40px;
+}
+
+.username{
+    font-family: 'secondaryFont' ;
+    font-weight: 800;
+}
+
